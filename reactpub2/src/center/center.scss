@@ -1,0 +1,301 @@
+$basic: #1e8ffa;
+$advanced: #1fc11f;
+$professional: #ff9014;
+$solutions: #b0b3bb;
+$black: #2b2d30;
+$free: #ffbd14;
+$border: #e1e2e5;
+
+button {
+  border: 0;
+  border-style: outset;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  width: 100%;
+  .centertop {
+    flex: 0.55;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    .centerButton {
+      flex: 0.1;
+      display: flex;
+      margin-top: 36px;
+      justify-content: flex-start;
+
+      .centerButtonOne {
+        background-color: #f4f5fa;
+        color: #b0b3bb;
+        font-size: 7px;
+        width: 8%;
+        &.active {
+          background-color: $basic;
+          color: #ffffff;
+        }
+        &:hover {
+          background-color: $basic;
+          color: #ffffff;
+        }
+      }
+
+      .centerButtonTwo {
+        background-color: #f4f5fa;
+        color: #b0b3bb;
+        font-size: 7px;
+        width: 8%;
+        &.active {
+          background-color: $basic;
+          color: #ffffff;
+        }
+        &:hover {
+          background-color: $basic;
+          color: #ffffff;
+        }
+      }
+    }
+    //focus
+    .centerMain {
+      flex: 0.9;
+      display: flex;
+      border: 1px solid #e1e2e5;
+      border-radius: 3px;
+      color: $black;
+      display: flex;
+
+      .element {
+        flex: 0.25;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid transparent;
+        .topElement {
+          flex: 0.45;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .basicTitle {
+            flex: 0.25;
+            color: $basic;
+          }
+          .advancedTitle {
+            flex: 0.25;
+            color: $advanced;
+          }
+          .professionalTitle {
+            flex: 0.25;
+            color: $professional;
+          }
+          .solutionsTitle {
+            flex: 0.25;
+            color: $solutions;
+          }
+          .money {
+            flex: 0.25;
+            font-size: 22px;
+            color: $black;
+            font-weight: 600;
+            .month {
+              font-size: 10px;
+            }
+          }
+          .moneysolutions {
+            flex: 0.25;
+            font-size: 12px;
+            color: $black;
+            font-weight: 600;
+          }
+          .clickButtonBasic {
+            flex: 0.15;
+            font-size: 10px;
+            width: 45%;
+            color: #ffffff;
+            background-color: $basic;
+          }
+          .clickButtonAdvanced {
+            flex: 0.15;
+            font-size: 10px;
+            width: 45%;
+            color: #ffffff;
+            background-color: $advanced;
+          }
+          .clickButtonProfessinal {
+            flex: 0.15;
+            font-size: 10px;
+            width: 45%;
+            color: #ffffff;
+            background-color: $professional;
+          }
+          .clickButtonSolutions {
+            flex: 0.15;
+            font-size: 10px;
+            width: 45%;
+            color: #ffffff;
+            background-color: $solutions;
+          }
+        }
+        .info {
+          flex: 0.55;
+          font-size: 12px;
+        }
+      }
+      .borderLine {
+        border: 3px solid transparent;
+        border-radius: 3px;
+      }
+      .rightBorder {
+        border-right: 1px solid $border;
+      }
+      .basic {
+        li::before {
+          content: '• ';
+          color: $basic;
+        }
+        li {
+          padding-left: 2em;
+          text-indent: -0.7em;
+          padding-bottom: 0.5em;
+        }
+        &.active {
+          border-color: $basic;
+        }
+      }
+      .advanced {
+        li::before {
+          content: '• ';
+          color: $advanced;
+        }
+        li {
+          padding-left: 2em;
+          text-indent: -0.7em;
+          padding-bottom: 0.5em;
+        }
+        &.active {
+          border: 3px solid $advanced;
+        }
+      }
+
+      .professional {
+        li::before {
+          content: '• ';
+          color: $professional;
+        }
+        li {
+          padding-left: 2em;
+          text-indent: -0.7em;
+          padding-bottom: 0.5em;
+        }
+
+        &.active {
+          border: 3px solid $professional;
+        }
+      }
+      .solutions {
+        li::before {
+          content: '• ';
+          color: $solutions;
+        }
+        li {
+          padding-left: 2em;
+          text-indent: -0.7em;
+          padding-bottom: 0.5em;
+        }
+        &.active {
+          border-color: $solutions;
+        }
+      }
+    }
+  }
+  .centerCenter {
+    flex: 0.25;
+
+    display: flex;
+    border: 1px solid #e1e2e5;
+    border-radius: 3px;
+    color: $black;
+    margin-bottom: 40px;
+
+    .centerFree {
+      flex: 0.23;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px;
+      align-items: center;
+      .freeTitle {
+        flex: 0.25;
+        color: $free;
+      }
+      .freeText {
+        flex: 0.25;
+        font-size: 1.375rem;
+        font-weight: 600;
+      }
+      .freeButton {
+        flex: 0.15;
+        font-size: 0.625rem;
+        width: 45%;
+        color: #ffffff;
+        background-color: $free;
+      }
+    }
+    .centerUl {
+      flex: 0.77;
+      .freeStyle {
+        display: flex;
+        height: 100%;
+        align-items: space-evenly;
+        .firstLi {
+          flex: 0.2;
+          display: flex;
+          flex-direction: column;
+          padding: 1em;
+          justify-content: space-evenly;
+        }
+        .secondLi {
+          flex: 0.2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 1em;
+        }
+        .thirdLi {
+          flex: 0.6;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding: 1em;
+        }
+        li::before {
+          content: '• ';
+          color: #6c7382;
+        }
+        .freeLi {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  .centerLast {
+    flex: 0.2;
+    .lastNotice {
+      padding-left: 2em;
+      text-indent: -0.7em;
+      padding-bottom: 1em;
+    }
+    .lastcontent {
+      padding-left: 2em;
+      text-indent: -0.7em;
+      font-size: 14px;
+    }
+  }
+}

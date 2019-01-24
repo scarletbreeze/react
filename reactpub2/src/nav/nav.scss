@@ -1,0 +1,13 @@
+// @import '../../mixin';
+
+.nav {
+  height: 80px;
+  width: 100%;
+
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #305afb, #1e8ffa 36%, #1ec6fa);
+  height: 8.1px;
+}
